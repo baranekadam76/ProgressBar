@@ -1,0 +1,36 @@
+h1 {
+	font-family: calibri;
+	font-size: 4vmin;
+}
+
+#wrapper {
+	width: 1000px;
+	height: auto;
+	margin: auto;
+	background-color: #FFF;
+}
+
+#space {
+	width: 1000px;
+	height: 300px;
+	margin: auto;
+	background-color: #FFF;
+}
+
+#ProgressBar {
+	width: 1000px;
+	height: 50px;
+	margin: auto;
+	border: 1px solid black;
+	border-radius: 5px;
+	display: grid;
+	grid-template-columns: repeat(1000, auto);
+}
+
+/*Change the column below to add progress*/
+
+#ProgressBar div {
+	grid-column: 1 / 1;
+	background-color: lightgreen;
+	border-radius: 5px;
+}
