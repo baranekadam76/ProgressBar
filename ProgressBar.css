@@ -1,6 +1,14 @@
-h1 {
+body {
+	background-color: lightgray;
 	font-family: calibri;
+}
+
+h1 {	
 	font-size: 4vmin;
+}
+
+h2 {
+	text-align: center;
 }
 
 #wrapper {
@@ -8,11 +16,12 @@ h1 {
 	height: auto;
 	margin: auto;
 	background-color: #FFF;
+	padding: 50px;
 }
 
 #space {
 	width: 1000px;
-	height: 300px;
+	height: 100px;
 	margin: auto;
 	background-color: #FFF;
 }
@@ -24,13 +33,65 @@ h1 {
 	border: 1px solid black;
 	border-radius: 5px;
 	display: grid;
-	grid-template-columns: repeat(1000, auto);
+	grid-template-columns: repeat(1000, 1fr);
 }
 
-/*Change the column below to add progress*/
+#ProgressBar2 {
+	width: 500px;
+	height: 25px;
+	margin: auto;
+	border: 1px solid black;
+	border-radius: 5px;
+	display: grid;
+	grid-template-columns: repeat(500, 1fr);
+}
+
+#numbers-left {
+	width: 500px;
+	height: 15px;
+	float: left;
+	text-align: left;
+}
+
+#numbers-right {
+	width: 500px;
+	height: 15px;
+	float: right;
+	text-align: right;
+}
+
+#life-container {
+	width: 500px;
+	height: auto;
+	margin: auto;
+}
+
+#numbers2-left {
+	width: 250px;
+	height: 15px;
+	float: left;
+	text-align: left;
+}
+
+#numbers2-right {
+	width: 250px;
+	height: 15px;
+	float: right;
+	text-align: right;
+}
+
+
+
+/*Change the columns below to add progress*/
 
 #ProgressBar div {
-	grid-column: 1 / 1;
+	grid-column: 1 / 30;
 	background-color: lightgreen;
+	border-radius: 5px;
+}
+
+#ProgressBar2 div {
+	grid-column: 1 / 15;
+	background-color: lightblue;
 	border-radius: 5px;
 }
