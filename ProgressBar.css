@@ -85,7 +85,7 @@ h2 {
 /*Change the columns below to add progress*/
 
 #ProgressBar div {
-	grid-column: 1 / 37.5;
+	grid-column: 1 / 38;
 	background-color: lightgreen;
 	border-radius: 5px;
 }
